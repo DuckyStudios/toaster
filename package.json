@@ -1,6 +1,6 @@
 {
   "name": "toaster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":
   "Toaster is a private npm package for tailwind/fontawesome toast notifications",
   "main": "./toaster.js",
