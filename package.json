@@ -1,0 +1,18 @@
+{
+  "name": "toaster",
+  "version": "1.0.0",
+  "description":
+  "Toaster is a private npm package for tailwind/fontawesome toast notifications",
+  "main": "./toaster.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuckyStudios/toaster.git"
+  },
+  "keywords": ["toaster", "javascript", "notifications", "toast", "tailwind"],
+  "author": "Ducky Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DuckyStudios/toaster/issues"
+  },
+  "homepage": "https://github.com/DuckyStudios/toaster#readme"
+}

@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Toaster by DuckyStudios</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.5.3/src/index.min.js"></script>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        html {
+            font-family: -apple-system, 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 overflow-hidden h-screen">
+    <div>
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+
+        <main class="max-w-2xl m-auto">
+            <div id="branding" class="p-4 flex justify-center">
+                <img src="img/dev_icon.png" alt="DuckyStudios" class="w-12 h-12">
+            </div>
+
+            <div id="showcase" class="bg-slate-900 rounded-xl shadow-lg p-8 px-10 mt-20">
+                <h2 class="text-white font-semibold text-3xl w-full border-b border-gray-700 pb-2">Toaster</h2>
+
+                <div id="showcase-options" class="mt-6 grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-sm text-gray-200 block leading-6 ml-1.5" for="title">Title</label>
+                        <input type="text" id="title" name="title" value="Hello World!" class="w-full mt-1 bg-slate-800 py-2 border border-gray-700 hover:border-gray-600 duration-300 px-4 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-indigo-600">
+                    </div>
+
+                    <div>
+                        <label class="text-sm text-gray-200 block leading-6 ml-1.5" for="message">Message</label>
+                        <input type="text" id="message" name="message" value="I'm a toastified message." class="w-full mt-1 bg-slate-800 py-2 border border-gray-700 hover:border-gray-600 duration-300 px-4 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-indigo-600">
+                    </div>
+
+                    <div>
+                        <label class="text-sm text-gray-200 block leading-6 ml-1.5" for="type">Type</label>
+                        <select id="type" name="type" class="w-full mt-1 bg-slate-800 py-2 border border-gray-700 hover:border-gray-600 duration-300 px-4 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-indigo-600">
+                            <option selected>success</option>
+                            <option>info</option>
+                            <option>error</option>
+                            <option>debug</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="text-sm text-gray-200 block leading-6 ml-1.5" for="dark">Darkmode</label>
+                        <select id="dark" name="dark" class="w-full mt-1 bg-slate-800 py-2 border border-gray-700 hover:border-gray-600 duration-300 px-4 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-indigo-600">
+                            <option value="1" selected>True</option>
+                            <option value="0">False</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="text-sm text-gray-200 block leading-6 ml-1.5" for="duration">Duration</label>
+                        <input type="number" id="duration" name="duration" value="5000" class="w-full mt-1 bg-slate-800 py-2 border border-gray-700 hover:border-gray-600 duration-300 px-4 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-indigo-600">
+                    </div>
+
+                    <div>
+                        <label class="text-sm text-gray-200 block leading-6 ml-1.5" for="label">Button Label <span class="text-gray-500">(Optional)</span></label>
+                        <input type="text" id="label" name="label" value="Undo" class="w-full mt-1 bg-slate-800 py-2 border border-gray-700 hover:border-gray-600 duration-300 px-4 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-indigo-600">
+                    </div>
+
+                    <div class="col-span-2 mt-2">
+                        <button id="button" type="button" class="rounded-lg bg-blue-500 text-center w-full py-2 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Toast!</button>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-400 text-xs text-center mt-2 px-16">&copy; Copyright 2023 DuckyStudios, made by Levi Heßmann. MIT License. Only for private/client use, authorization before usage is required.</p>
+        </main>
+
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+    </div>
+</body>
+
+<script src="toaster.js"></script>
+<script>
+    const button = document.getElementById('button');
+
+    const title = document.getElementById('title');
+    const message = document.getElementById('message');
+    const type = document.getElementById('type');
+    const duration = document.getElementById('duration');
+    const label = document.getElementById('label');
+    const dark = document.getElementById('dark');
+
+    button.onclick = function () {
+        if (label.value === '') {
+            new Toaster({
+                type: type.value,
+                title: title.value,
+                message: message.value,
+                duration: duration.value,
+                dark: dark.value === '1'
+            })
+        } else {
+            new Toaster({
+                type: type.value,
+                title: title.value,
+                message: message.value,
+                duration: duration.value,
+                dark: dark.value === '1',
+                button: {
+                    text: label.value,
+                    onClick: function () {
+                        console.log('Clicked!');
+                    }
+                }
+            })
+        }
+    }
+</script>
+</html>
